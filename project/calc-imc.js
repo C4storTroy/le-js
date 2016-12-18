@@ -28,7 +28,12 @@ lookArray(trsPatients, function(patientTr){
 
 });**/
 
-function calcAllImcs(){
+
+
+var button = document.getElementById('calc-imcs');
+//button.onclick = calcAllImcs;
+//prefer addEventListener this way we can execute more tasks -just in new browsers
+button.addEventListener("click", function(){
   function createPatients(patientTr){
 
     var tdName = patientTr.getElementsByClassName('info-name')[0];
@@ -66,9 +71,4 @@ function calcAllImcs(){
 
   });
 
-}
-
-var button = document.getElementById('calc-imcs');
-//button.onclick = calcAllImcs;
-//prefer addEventListener this way we can execute more tasks -just in new browsers
-button.addEventListener("click", calcAllImcs);
+});
