@@ -1,0 +1,91 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="cart.css">
+</head>
+<body>
+	<div class="cart">
+		<h2>Cart deliver Wellington</h2>
+		<table>
+			<thead>
+				<tr>
+					<td></td>
+					<td>Name</td>
+					<td>Quantity</td>
+					<td>Value</td>
+					<td>Total</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><img src="images/tablet.jpg"></td>
+					<td>Tablet miPad 18</td>
+					<td>1</td>
+					<td>499.99</td>
+					<td class="item-total">499.99</td>
+					<td><a class="remove-item" href="">(remover)</a></td>
+				</tr>
+				<tr>
+					<td><img src="images/mobile.png"></td>
+					<td>Mobile miPhone 18</td>
+					<td>2</td>
+					<td>199.99</td>
+					<td class="item-total">399.98</td>
+					<td><a class="remove-item" href="">(remover)</a></td>
+				</tr>
+				<tr>
+					<td><img src="images/shoes.jpg"></td>
+					<td>Shoes</td>
+					<td>1</td>
+					<td>99.99</td>
+					<td class="item-total">99.99</td>
+					<td><a class="remove-item" href="">(remover)</a></td>
+				</tr>
+				<tr>
+					<td><img src="images/monitor.jpg"></td>
+					<td>Monitor Sam 21</td>
+					<td>1</td>
+					<td>299.00</td>
+					<td class="item-total">299.00</td>
+					<td><a class="remove-item" href="">(remover)</a></td>
+				</tr>
+				<tr>
+					<td><img src="images/keyboard.jpg"></td>
+					<td>Keyboard wired </td>
+					<td>1</td>
+					<td>100.00</td>
+					<td class="item-total">100.00</td>
+					<td><a class="remove-item" href="">(remover)</a></td>
+				</tr>
+				<tr>
+					<td><img src="images/mouse.jpg"></td>
+					<td>Mouse wireless</td>
+					<td>1</td>
+					<td>199.00</td>
+					<td class="item-total">199.00</td>
+					<td><a class="remove-item" href="">(remover)</a></td>
+				</tr>
+				<tr>
+					<td><img src="images/tshirt.jpg"></td>
+					<td>Tshirt G</td>
+					<td>1</td>
+					<td>25.00</td>
+					<td class="item-total">25.00</td>
+					<td><a class="remove-item" href="">(remover)</a></td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+	<div>
+		<input type="button" value="Undo" id="undo">
+	</div>
+	<div>
+		Total: $ <span id="total-value">0</span>
+		<br />
+		Quant Items: <span id="quantity-items">0</span>
+	</div>
+
+<script src=jquery-3.1.1.min.js></script>
+<script src=cart.js></script>
+</body>
+</html>
