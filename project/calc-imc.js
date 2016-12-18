@@ -32,6 +32,8 @@ lookArray(trsPatients, function(patientTr){
 
 var button = document.getElementById('calc-imcs');
 //button.onclick = calcAllImcs;
+//<button onclick="calcAllImcs()" id="calcular-imcs"
+// class="botao">Calcular IMCs</button> - functional but prefer listener
 //prefer addEventListener this way we can execute more tasks -just in new browsers
 button.addEventListener("click", function(){
   function createPatients(patientTr){
@@ -56,7 +58,6 @@ button.addEventListener("click", function(){
     }
       return patientActual;
   }
-
 
   //array of patients - tr
   var trsPatients = document.getElementsByClassName('patient');
