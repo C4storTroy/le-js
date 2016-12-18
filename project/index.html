@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>My patients</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="site.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1>My patients</h1>
+			</div>
+		</header>
+		<main class="container">
+			<section>
+				<h2>My patients</h2>
+				<table>
+					<tr>
+						<th>Name</th>
+						<th>Weight(kg)</th>
+						<th>Height(m)</th>
+						<th>IMC</th>
+					</tr>
+					<tr class="patient">
+						<td class="info-name">Leonardo</td>
+						<td class="info-weight">57</td>
+						<td class="info-height">1.67</td>
+						<td class="info-imc"></td>
+					</tr>
+					<tr class="patient">
+						<td class="info-name">Paulo</td>
+						<td class="info-weight">100</td>
+						<td class="info-height">2.00</td>
+						<td class="info-imc"></td>
+					</tr>
+					<tr class="patient">
+						<td class="info-name">Stuart</td>
+						<td class="info-weight">120</td>
+						<td class="info-height">1.80</td>
+						<td class="info-imc"></td>
+					</tr>
+					<tr class="patient">
+						<td class="info-name">Rafael</td>
+						<td class="info-weight">110</td>
+						<td class="info-height">1.60</td>
+						<td class="info-imc"></td>
+					</tr>
+				</table>
+				<button id="calc-imcs" class="button">Calc Imcs</button>
+			</section>
+			<section>
+				<h2>Add new patient</h2>
+				<form>
+					<fieldset>
+						<label for="name">Name:</label>
+						<input id="name-field" type="text" placeholder="Type patient name">
+					</fieldset>
+					<fieldset class="mid-field">
+						<label for="weight">Weight:</label>
+						<input id="field-weight" type="text" placeholder="Type patient's weight">
+					</fieldset>
+					<fieldset class="mid-field">
+						<label for="height">Height:</label>
+						<input id="field-height" type="text" placeholder="Type patient height">
+					</fieldset>
+					<button id="add-patient" class="button bto-principal">Add patient</button>
+				</form>
+			</section>
+		</main>
+		<script src='look-for-patient.js'></script>
+		<script src='calc-imc.js'></script>
+		<script src='print-name.js'></script>
+	</body>
+</html>
