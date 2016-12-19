@@ -55,7 +55,7 @@ td {
 	text-decoration: none;
 	text-transform: uppercase;
 
-	display: inline-block;
+	display: none;
 	padding: 0.5em;
 }
 
@@ -84,4 +84,12 @@ input[type=button] {
 
 .recovered {
 	background: #FE0;
+}
+
+.hovering {
+	background: #CCC;
+}
+
+#show-ad {
+	display: none;
 }

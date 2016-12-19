@@ -3,6 +3,11 @@
 	<link rel="stylesheet" type="text/css" href="cart.css">
 </head>
 <body>
+
+	<h2>General</h2>
+	<a href="" class="alter-ad">Hide ad</a>
+	<a href="" id="show-ad" class="alter-ad">Show ad</a>
+
 	<div class="cart">
 		<h2>Cart deliver Wellington</h2>
 		<table>
@@ -56,34 +61,87 @@
 					<td class="item-total">100.00</td>
 					<td><a class="remove-item" href="">(remover)</a></td>
 				</tr>
-				<tr>
-					<td><img src="images/mouse.jpg"></td>
-					<td>Mouse wireless</td>
-					<td>1</td>
-					<td>199.00</td>
-					<td class="item-total">199.00</td>
-					<td><a class="remove-item" href="">(remover)</a></td>
-				</tr>
-				<tr>
-					<td><img src="images/tshirt.jpg"></td>
-					<td>Tshirt G</td>
-					<td>1</td>
-					<td>25.00</td>
-					<td class="item-total">25.00</td>
-					<td><a class="remove-item" href="">(remover)</a></td>
-				</tr>
 			</tbody>
 		</table>
 
-	</div>
 	<div>
-		<input type="button" value="Undo" id="undo">
+    <input type="button" class="undo" value="Undo">
 	</div>
-	<div>
-		Total: $ <span id="total-value">0</span>
+	<div class="resume">
+		Total: $ <span class="total-value">0</span>
 		<br />
-		Quant Items: <span id="quantity-items">0</span>
+		Quant Items: <span class="quantity-items">0</span>
 	</div>
+	</div>
+
+<!-- second cart-->
+<div class="cart">
+	<h2>Cart deliver Auckland</h2>
+	<table>
+		<thead>
+			<tr>
+				<td></td>
+				<td>Name</td>
+				<td>Quantity</td>
+				<td>Value</td>
+				<td>Total</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><img src="images/tshirt.jpg"></td>
+				<td>Tshirt G</td>
+				<td>1</td>
+				<td>25.00</td>
+				<td class="item-total">25.00</td>
+				<td><a class="remove-item" href="">(remover)</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+<div>
+	<input type="button" class="undo" value="Undo">
+</div>
+<div class="resume">
+	Total: $ <span class="total-value">0</span>
+	<br />
+	Quant Items: <span class="quantity-items">0</span>
+</div>
+</div>
+
+<div class="cart">
+	<h2>Cart deliver Dunedin</h2>
+	<table>
+		<thead>
+			<tr>
+				<td></td>
+				<td>Name</td>
+				<td>Quantity</td>
+				<td>Value</td>
+				<td>Total</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><img src="images/mouse.jpg"></td>
+				<td>Mouse wireless</td>
+				<td>1</td>
+				<td>199.00</td>
+				<td class="item-total">199.00</td>
+				<td><a class="remove-item" href="">(remover)</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+<div>
+	<input type="button" class="undo" value="Undo">
+</div>
+<div class="resume">
+	Total: $ <span class="total-value">0</span>
+	<br />
+	Quant Items: <span class="quantity-items">0</span>
+</div>
+</div>
 
 <script src=jquery-3.1.1.min.js></script>
 <script src=cart.js></script>
